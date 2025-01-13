@@ -1,0 +1,91 @@
+/* إعدادات الجسم والخلفية */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/%D8%A7%D8%AC%D9%88%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D8%B0%D8%A7%D9%83%D8%B1%D9%87.jpg') no-repeat center center/cover;
+  color: #fff;
+  font-family: "Cairo", Arial, sans-serif;
+  text-align: center;
+}
+
+/* الحاوية */
+.countdown-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  max-width: 90%; /* تناسب الهواتف */
+}
+
+h1 {
+  font-size: 1.5rem; /* تصغير العنوان للهواتف */
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+p {
+  font-size: 1rem; /* تصغير النصوص */
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+#countdown {
+  display: flex;
+  gap: 10px; /* تقليل المسافات */
+  justify-content: center;
+  flex-wrap: wrap; /* يجعلها صفوف عند الحاجة */
+}
+
+.time {
+  background: #444;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.time span {
+  display: block;
+  font-size: 2rem; /* تصغير الأرقام */
+  font-weight: bold;
+}
+
+.time p {
+  margin: 0;
+  font-size: 0.9rem; /* تصغير النصوص */
+  color: #aaa;
+}
+
+/* أيقونة السوشيال ميديا */
+.social-link {
+  margin-top: 15px;
+}
+
+.social-link a img {
+  width: 30px; /* تصغير الأيقونة */
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-link a img:hover {
+  transform: scale(1.2);
+}
+
+/* إعدادات خاصة للأجهزة الصغيرة */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .time span {
+    font-size: 1.5rem;
+  }
+
+  .time p {
+    font-size: 0.8rem;
+  }
+}
